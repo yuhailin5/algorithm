@@ -1,22 +1,17 @@
+'''
+Description: 
+Author: 天涯过客
+Date: 2025-03-13 09:33:33
+'''
 
 
-
-from functools import cache
-
-@cache
-def dfs(n,t,max):
-    if max < 1:
-        return 1
-    ans = 1
-    for i in range(1,max):
-        ans += dfs(t,i,abs(t-i))
-    return ans
+nums = [5,3,1,45,6,12,5]
 
 
-n = int(input())
-ans = 0
-
-for i in range(1,n+1):
-    ans += dfs(n,i,abs(n-i))
-
-print(ans)
+max = nums[0]
+for i in range(1, len(nums)):
+    print('cur:',nums[i])
+    print('max:',max)
+    if nums[i] > max:
+        max = nums[i]
+print(max)
