@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "luogu.java.test.Main",
+            "projectName": "algorithm_8248b106"
+        },
+        {
+            "type": "java",
             "name": "_58",
             "request": "launch",
             "mainClass": "_58",
