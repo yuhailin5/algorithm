@@ -1,3 +1,8 @@
+/*
+ * @Description: kmp
+ * @Author: 天涯过客
+ * @Date: 2025-04-06 19:41:20
+ */
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -34,7 +39,7 @@ void solve() {
             j++;
         }
         if (j == n) {
-            cout<<i-n+1<<endl;
+            cout<<i-n+2<<endl;
             j = next[j-1];
         }
     }
